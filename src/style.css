@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #AAACAD;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Header CSS */
+.mainHeaderGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1F2029;
+    position: fixed;
+    top: 0;
+}
+
+.searchGrid {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.mainApplicationIcon {
+    height: 50px !important;
+    width: auto !important;
+    color: #6F9AF4
+}
+
+.searchBox .MuiInputBase-root {
+    background-color: #292B2F;
+    color: #B0B1B5 !important;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.searchIcon {
+    color: white;
+}
+
+.accountGrid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.accountIcon {
+    background-color: #434549;
+    border-radius: 100px;
+    padding: 10px;
+    height: 25px !important;
+    width: auto !important;
+    color: #9B9DA1;
+    cursor: pointer;
+}
+
+/* Sidebar CSS */
+.mainSidebarGrid {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    top: 95px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 25px;
+    background-color: #1F2029;
+    width: 5% !important;
+    position: fixed;
+}
+
+.topIcons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px;
+}
+
+.sidebarIcons {
+    height: 40px !important;
+    width: 40px !important;
+    color: #9B9DA1;
+    cursor: pointer;
+}
+
+.sidebarIcons.active {
+    color: #7395FF !important;
+    /* border-left: 5px solid #7395FF; */
+}
+
+/* DASHBOARD CSS */
+.mainDashboard {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    padding-left: 50px;
+    top: 95px;
+    position: absolute;
+}
+
+.container {
+    width: 95%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dashText {
+    color: #FFFFFF;
+    font-size: 30px !important;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.orderList {
+    display: flex;
+    gap: 20px;
+    width: 55%;
+}
+
+.showOrder {
+    background-color: #1F2029;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.orderBorder {
+    padding: 7px 5px;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderBorder2 {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.dashTextAmount {
+    color: #FFFFFF;
+    font-size: 20px !important;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.blueOrder {
+    color: blue;
+    background-color: #2C3366;
+}
+
+.menuOrder {
+    color: #438EB0;
+    background-color: #214B61;
+}
+
+.greenOrder {
+    color: rgb(110, 249, 110);
+    background-color: #175046;
+
+}
+
+.orangeOrder {
+    color: rgb(247, 83, 24);
+    background-color: #603437;
+
+}
+
+.pinkOrder {
+    color: rgb(243, 86, 112);
+    background-color: #5D2B4C;
+
+}
+
+.dashTextStatus {
+    color: #FFFFFF;
+    font-size: 15px !important;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.ratingTextUp {
+    color: #FFFFFF;
+    font-size: 10px !important;
+    color: rgb(110, 249, 110);
+    font-family: "Poppins", sans-serif !important;
+}
+
+.amountBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upIcon {
+    color: rgb(110, 249, 110)
+}
+
+.downIcon {
+    color: red
+}
+
+.ratingTextDown {
+    color: #FFFFFF;
+    font-size: 10px !important;
+    color: red;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.ratingBox {
+    display: flex;
+    align-items: center;
+}
+
+.firstSection {
+    display: flex;
+    gap: 30px;
+}
+
+.thirdSection {
+    display: flex;
+    gap: 30px;
+    height: 600px;
+}
+
+.reviewSectionBox {
+    background-color: #1F2029;
+    width: 35%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.circularBox{
+    background-color: #1F2029;
+    width: 35%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.showProfit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.valueText {
+    color: #FFFFFF;
+    font-size: 10px !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.activityBar {
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    width: 55%;
+    background-color: #1F2029;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.dropdownTextBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphSelect {
+    border-radius: 50px !important;
+    height: 50px !important;
+    width: 150px !important;
+    background-color: #494B4F !important;
+    color: #D0D2D6 !important;
+    text-align: center !important;
+}
+
+.arrowDropdown {
+    color: #D0D2D6 !important;
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.MuiPopover-paper {
+    background-color: #494B4F !important;
+    border-radius: 20px !important;
+    margin-top: 5px !important;
+    color: #D0D2D6 !important;
+}
+
+.circularProgressStyle {
+    color: #7590FE !important;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    border-radius: 30px !important;
+}
+
+.circularProgressParentStyle {
+    color: #2F3168 !important;
+    padding: 0;
+}
+
+.showRate {
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    color: #FFFFFF;
+    font-weight: 600 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 33px !important;
+}
+
+.statusText {
+    position: absolute;
+    top: 57%;
+    left: 35%;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 8px !important;
+    width: 25%;
+    text-align: center;
+}
+
+.fourthSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+.statusSection {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.goalsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forwardIcon {
+    background-color: #434549;
+    border-radius: 100px;
+    padding: 10px;
+    height: 15px !important;
+    width: auto !important;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.recentOrderBox {
+    background-color: #1F2029;
+    width: 55%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+}
+
+.recentOrdersText {
+    color: #FFFFFF;
+    font-size: 25px !important;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.customerFeedbackText {
+    color: #FFFFFF;
+    font-size: 25px !important;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif !important;
+    margin-bottom: 20px !important;
+}
+
+.activityText {
+    color: #FFFFFF;
+    font-size: 25px !important;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif !important;
+    margin-bottom: 20px !important;
+}
+
+.tableHead {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+.tableDataCustomer {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.tableCustomerText {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important; 
+    color: white !important;
+}
+
+.tableDataStatusDelivered {
+    display: flex !important;
+    justify-content: center !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important; 
+    color: #1C8E70 !important;
+    background-color: #1C4F47 !important;
+    border-radius: 50px !important;
+    width: 100px !important;
+    text-transform: capitalize !important;
+}
+
+.tableDataStatus {
+    display: flex !important;
+    justify-content: center !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important; 
+    color: #A3505C !important;
+    background-color: #5C3236 !important;
+    border-radius: 50px !important;
+    width: 100px !important;
+    text-transform: capitalize !important;
+}
+
+.tableData {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important; 
+    color: white !important;
+}
+
+.tableRow:not(:last-child) {
+    height: 50px !important;
+    border-bottom: 2px solid #292A33 !important;
+}
+
+.tableHead {
+    height: 50px !important;
+    border-bottom: 2px solid #292A33 !important;
+}
+
+.ordersProfileImage {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.reviewBox {
+    border-bottom: 2px solid #292A33 !important;
+    margin-bottom: 15px;
+}
+
+.profileReviewBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.reviewerName {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important; 
+    color: white !important;
+}
+
+.reviews {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important; 
+    color: white !important;
+    margin-bottom: 15px !important;
+}
+
+.MuiBarElement-root {
+    fill: #7294ff !important;
+}
+
+.MuiChartsLegend-root {
+    display: none !important;
+}
+
+.MuiTableCell-root {
+    border-bottom: 0px !important;
+}
+
+.MuiRating-root {
+    color: #FED931 !important
+}
+
+.MuiResponsiveChart-container {
+    height: 220px !important;
+}
